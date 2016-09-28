@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class frmParts
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,31 +22,39 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.btnParts = New System.Windows.Forms.Button()
+        Me.txtParts = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'btnParts
+        'txtParts
         '
-        Me.btnParts.Location = New System.Drawing.Point(34, 40)
-        Me.btnParts.Name = "btnParts"
-        Me.btnParts.Size = New System.Drawing.Size(86, 43)
-        Me.btnParts.TabIndex = 0
-        Me.btnParts.Text = "Parts"
-        Me.btnParts.UseVisualStyleBackColor = True
+        Me.txtParts.Location = New System.Drawing.Point(204, 36)
+        Me.txtParts.Name = "txtParts"
+        Me.txtParts.Size = New System.Drawing.Size(288, 22)
+        Me.txtParts.TabIndex = 2
         '
-        'Form1
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(62, 41)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(126, 17)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Enter Part Number"
+        '
+        'frmParts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(311, 425)
-        Me.Controls.Add(Me.btnParts)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(963, 681)
+        Me.Controls.Add(Me.txtParts)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "frmParts"
+        Me.Text = "frmParts"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnParts As Button
+    Friend WithEvents txtParts As TextBox
+    Friend WithEvents Label1 As Label
 End Class

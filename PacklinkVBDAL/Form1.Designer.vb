@@ -22,31 +22,9 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.btnParts = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'btnParts
-        '
-        Me.btnParts.Location = New System.Drawing.Point(34, 40)
-        Me.btnParts.Name = "btnParts"
-        Me.btnParts.Size = New System.Drawing.Size(86, 43)
-        Me.btnParts.TabIndex = 0
-        Me.btnParts.Text = "Parts"
-        Me.btnParts.UseVisualStyleBackColor = True
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        components = New System.ComponentModel.Container()
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(311, 425)
-        Me.Controls.Add(Me.btnParts)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form1"
         Me.Text = "Form1"
-        Me.ResumeLayout(False)
-
     End Sub
 
-    Friend WithEvents btnParts As Button
 End Class

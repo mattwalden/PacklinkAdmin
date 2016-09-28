@@ -58,9 +58,9 @@ Namespace My
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Data Source=MATT-PC;Initial Catalog=PacklinkDB;Integrated Security=True")>  _
-        Public ReadOnly Property DbConnectionString() As String
+        Public ReadOnly Property DBconnect() As String
             Get
-                Return CType(Me("DbConnectionString"),String)
+                Return CType(Me("DBconnect"),String)
             End Get
         End Property
     End Class
@@ -74,9 +74,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.PacklinkAdmin.My.MySettings
+        Friend ReadOnly Property Settings() As Global.PacklinkVB.Dal.My.MySettings
             Get
-                Return Global.PacklinkAdmin.My.MySettings.Default
+                Return Global.PacklinkVB.Dal.My.MySettings.Default
             End Get
         End Property
     End Module
